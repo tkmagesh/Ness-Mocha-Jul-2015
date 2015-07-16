@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Greeting App</title>
+    <script src="angular.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
-<body>
+<body ng-app="greetingApp">
    <h1>Greeting App</h1>
-    <div class="content">
+    <div class="content" ng-controller="greetController">
         <label for="">Name :</label>
-        <input type="text" >
-        <input type="button" value="Greet">
-        <div></div>
+        <input type="text" ng-model="name">
+        <input type="button" value="Greet" ng-click="greet()">
+        <div>{{greetMsg}}</div>
     </div>
 </body>
 </html>
