@@ -1,0 +1,17 @@
+npm init
+
+npm install -g karma-cli
+
+karma init
+
+npm install karma, mocha, etc --save-dev
+
+update karma.conf.js with the frameworks / frameworks: [] /
+
+karma.conf.js has to be updated whenever a new framework is added, browser support is added
+
+npm install webdriver-manager -g
+
+webdriver-manager update
+
+protractor protractor.conf.js
